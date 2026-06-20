@@ -4,10 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
+    <style>
+        .profile-card {
+            max-width: 320px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            font-family: Arial, sans-serif;
+            margin: 24px 0;
+        }
+
+        .profile-card img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .profile-card h2 {
+            margin: 0 0 4px;
+            font-size: 1.5rem;
+        }
+
+        .profile-card .role {
+            color: #555;
+            margin: 0 0 16px;
+        }
+
+        .profile-card dl {
+            margin: 0;
+        }
+
+        .profile-card dt {
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        .profile-card dd {
+            margin: 4px 0 0;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello, World!</h1>
     <p>Welcome to my simple HTML page.</p>
+
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/96" alt="Alice profile photo">
+        <h2>Alice Johnson</h2>
+        <p class="role">Software Developer</p>
+        <dl>
+            <dt>Email</dt>
+            <dd>alice.johnson@email.com</dd>
+            <dt>Age</dt>
+            <dd>28</dd>
+            <dt>City</dt>
+            <dd>New York</dd>
+            <dt>Bio</dt>
+            <dd>Passionate about building clean, user-friendly web applications.</dd>
+        </dl>
+    </div>
 
     <table border="1">
         <thead>
